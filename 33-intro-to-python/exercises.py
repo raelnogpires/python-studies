@@ -16,11 +16,12 @@ print(biggerNumber(15, 9))
 # create a function that receives a list and returns the arithmetic median.
 
 
-def median(list):
+def median(numberList):
     result = 0
-    for n in list:
-        result += n
-    return result / len(list)
+    for number in numberList:
+        result += number
+
+    return result / len(numberList)
 
 
 print(median([1, 2, 3, 4, 5, 6]))
@@ -44,3 +45,21 @@ def starsSquare(x):
 
 
 starsSquare(5)
+
+# exercise 4
+# create a function that receives a list of names
+# and returns the bigger name
+
+
+def biggerName(nameList):
+    lengthList = []
+    for name in nameList:
+        lengthList.append(len(name))
+        # we append every name length to lengthList
+
+    biggerLength = max(lengthList)  # now we get the max value from lengthList
+    lengthIndex = lengthList.index(biggerLength)  # we get the index
+    return nameList[lengthIndex]  # and return the name in that index
+
+
+print(biggerName(["José", "Lucas", "Nádia", "Fernanda", "Cairo", "Joana"]))
