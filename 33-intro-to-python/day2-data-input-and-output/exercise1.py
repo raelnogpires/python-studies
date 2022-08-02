@@ -6,10 +6,11 @@
 # RA
 # R
 
-def invertedNameStairCase(name):
+def invertedNameStairCase():
+    name = input("Enter a name: ")
     nameLen = len(name)
     for i in range(nameLen, 0, -1):
         print(name[:i])
 
 
-invertedNameStairCase("RAEL")
+invertedNameStairCase()
