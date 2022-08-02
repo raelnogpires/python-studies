@@ -82,3 +82,25 @@ def howManyCansToPaintXSquareMeter(wallSize):
 
 print(howManyCansToPaintXSquareMeter(3))
 print(howManyCansToPaintXSquareMeter(130))
+
+# exercise 6
+# create a function that receives 3 sides of a triangle
+# and returns the type of the formed triangle (equilateral, isosceles, scalene)
+# or "not a triangle" in case is not possible to form a triangle.
+
+
+def createTriangle(s1, s2, s3):
+    is_true = (
+        s1 + s2 > s3 and
+        s2 + s3 > s1 and
+        s1 + s3 > s2
+    )
+
+    if not is_true:
+        return "not a triangle"
+    elif s1 == s2 == s3:
+        return "equilateral triangle, three equal sides"
+    elif s1 == s2 or s2 == s3 or s1 == s3:
+        return "isosceles triangle, two equal sides"
+    else:
+        return "scalene triangle, three differentes sides"
