@@ -63,3 +63,22 @@ def biggerName(nameList):
 
 
 print(biggerName(["José", "Lucas", "Nádia", "Fernanda", "Cairo", "Joana"]))
+
+# exercise 5
+# given that 1 liter of paint covers 3 square meters and the paint is selled in
+# 18 liters cans and costs R$80,
+# create a function that returns two values in a tuple
+# the quantity of paint cans and the total price.
+
+
+def howManyCansToPaintXSquareMeter(wallSize):
+    liters = wallSize / 3
+    cans = liters / 18
+    if liters < 18:
+        return (liters, 80)
+    else:
+        return (round(liters), round(cans * 80))
+
+
+print(howManyCansToPaintXSquareMeter(3))
+print(howManyCansToPaintXSquareMeter(130))
