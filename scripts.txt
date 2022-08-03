@@ -1,0 +1,2 @@
+## Create virtual environment and enter it
+python3 -m venv .venv && source .venv/bin/activate
