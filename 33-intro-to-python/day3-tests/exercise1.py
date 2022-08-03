@@ -6,6 +6,9 @@
 
 
 def number_list_or_fizz_buzz(n):
+    if not int(n):
+        raise ValueError
+
     result = []
     for i in range(1, n):
         if i % 3 == 0 and i % 5 == 0:
@@ -20,4 +23,4 @@ def number_list_or_fizz_buzz(n):
     return result
 
 
-print(number_list_or_fizz_buzz(4))
+print(number_list_or_fizz_buzz("s"))

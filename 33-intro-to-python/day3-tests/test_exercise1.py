@@ -1,3 +1,4 @@
+import pytest
 from exercise1 import number_list_or_fizz_buzz
 
 fizz = [1, 2, "Fizz"]
@@ -18,3 +19,8 @@ def test_func_when_appear_fizz_and_buzz():
 
 def test_func_when_appear_fizz_buzz_and_fizzbuzz():
     assert number_list_or_fizz_buzz(16) == fizz_buzz
+
+
+def test_if_error_is_thrown_when_param_not_number():
+    with pytest.raises(ValueError, match="invalid literal for int()"):
+        number_list_or_fizz_buzz("s")
