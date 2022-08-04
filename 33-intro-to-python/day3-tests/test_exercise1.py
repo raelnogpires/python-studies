@@ -21,6 +21,6 @@ def test_func_when_appear_fizz_buzz_and_fizzbuzz():
     assert number_list_or_fizz_buzz(16) == fizz_buzz
 
 
-def test_if_error_is_thrown_when_param_not_number():
-    with pytest.raises(ValueError, match="invalid literal for int()"):
+def test_func_throw_error_if_param_not_valid():
+    with pytest.raises(ValueError):
         number_list_or_fizz_buzz("s")

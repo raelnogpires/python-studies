@@ -15,5 +15,5 @@ def passed_only_numbers_returns_just_the_numbers():
 
 
 def test_int_passed_to_func():
-    with pytest.raises(TypeError, "param must be an integer"):
+    with pytest.raises(TypeError):
         find_phone_number_by_phrase(123)

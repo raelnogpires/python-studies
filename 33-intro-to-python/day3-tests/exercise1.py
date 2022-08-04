@@ -21,6 +21,3 @@ def number_list_or_fizz_buzz(n):
             result.append(i)
 
     return result
-
-
-print(number_list_or_fizz_buzz("s"))
