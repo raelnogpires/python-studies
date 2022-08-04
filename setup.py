@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-  name="33-intro-to-python",
+  name="python-studies",
   setup_requires=["pytest-runner"],
   tests_require=["pytest"],
 )
