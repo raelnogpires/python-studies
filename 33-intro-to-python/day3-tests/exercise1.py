@@ -7,7 +7,7 @@
 
 def number_list_or_fizz_buzz(n):
     if not int(n):
-        raise ValueError
+        raise ValueError("param must be an integer")
 
     result = []
     for i in range(1, n):

@@ -1,5 +1,11 @@
 ## Create virtual environment and enter it
 python3 -m venv .venv && source .venv/bin/activate
 
+##  Install dependencies
+pip install -r dev-requirements.txt
+
+## Run tests
+python3 -m pytest
+
 ## Leave virtual environment
 deactivate
