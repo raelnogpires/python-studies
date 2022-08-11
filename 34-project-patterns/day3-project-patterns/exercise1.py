@@ -1,3 +1,8 @@
+# exercise 1
+# create the new classes LogError, LogWarning and LogSuccess
+# using the decorator pattern
+
+
 red = "\033[91m"
 green = "\033[92m"
 orange = "\033[93m"
@@ -37,6 +42,6 @@ err = LogError(Log)
 warn = LogWarning(Log)
 success = LogSuccess(Log)
 
-print(err.trigger_log("this is an error message"))
-print(warn.trigger_log("this is a warning message"))
-print(success.trigger_log("this is a success message"))
+print(err.trigger_log("there are errors in system"))
+print(warn.trigger_log("system is slow"))
+print(success.trigger_log("system working"))
